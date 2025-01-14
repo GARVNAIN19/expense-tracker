@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block title %}Add Expense{% endblock %}
+{% block content %}
+    <h1>Add Expense</h1>
+    <form method="POST">
+        <label for="amount">Amount:</label>
+        <input type="number" name="amount" required><br>
+
+        <label for="description">Description:</label>
+        <input type="text" name="description"><br>
+
+        <label for="category">Category:</label>
+        <input type="text" name="category"><br>
+
+        <label for="date">Date (DD-MM-YYYY):</label>
+        <input type="date" name="date"><br>
+
+        <button type="submit">Add Expense</button>
+    </form>
+{% endblock %}
